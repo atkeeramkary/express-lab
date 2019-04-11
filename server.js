@@ -13,7 +13,13 @@ app.get('/greeting', (req, res) => {
 app.get('/greeting/:name', (req, res) =>{
 	const name ='Porter'
 	res.send("Hello Stranger " + req.params.name + "!")
+
+
 });
+
+app.get('/tip/:total/:tipPercentage', (req, res) => {
+	res.send(req.params.tipPercentage)
+})
 
 
 
